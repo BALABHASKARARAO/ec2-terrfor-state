@@ -1,8 +1,9 @@
-resource "aws_instance" "web" {
-  ami           = "ami-036d46416a34a611c"
-  instance_type = "t2.micro"
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket"
+ # acl    = "private"
 
-  tags = {
-    Name = "HelloWorld"
-  }
+  #tags = {
+   # Name        = "My bucket"
+   # Environment = "Dev"
+  #}
 }
