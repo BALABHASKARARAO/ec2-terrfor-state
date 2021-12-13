@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "bala-my-tf-test-bucket"
+  bucket = "bala-b-my-tf-test-bucket"
  # acl    = "private"
 
   #tags = {
